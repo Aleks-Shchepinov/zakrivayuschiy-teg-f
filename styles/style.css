@@ -13,4 +13,55 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family-inter), sans-serif;
+  font-variation-settings: var(--font-weight-text);
+}
+
+.header {
+  max-width: 700px;
+  background-color: var(--bk-color), #fff;
+  border: 2px solid var(--border-color);
+  padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  padding-inline: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
+  margin-block: 100px;
+  margin-inline: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
+  text-align: center;
+  font-family: var(--font-family-accent);
+  font-weight: var(--font-weight-text);
+}
+
+.logo {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
+}
+
+.header_title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  margin-top: 20px;
+}
+
+.card-list_item {
+  max-inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+}
+
+.card-list_item_title {
+  font-weight: var(--font-weight-h);
+  font-size: var(--font-size-h);
+}
+
+.card-list_item_image {
+  object-fit: cover;
+  inline-size: 100%;
+}
+
+.card-list_item_container {
+  position: relative;
+}
+
+.card-list_item_label {
+  position: absolute;
+  top: 25px;
+  right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
 }

@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family-inter), sans-serif;
+  font-family: var(--font-family-main), sans-serif;
   font-variation-settings: 'wght' var(--font-weight-text);
   text-align: var(--text-align);
   font-size: var(--font-size-h);
@@ -73,7 +73,7 @@
 .card-list_item_title {
   --line-height-h: 31px;
 
-  font-variation-settings: 'wght' var(--font-weight-h);
+  font-variation-settings: 'wght' var(--font-weight-accent);
   line-height: var(--line-height-h);
   font-size: var(--font-size-h);
   padding-inline: 10px;
@@ -88,6 +88,7 @@
 
 .card-list_item_image {
   object-fit: cover;
+  object-position: center;
   block-size: 100%;
   inline-size: 100%;
   max-block-size: 100%;
@@ -105,7 +106,6 @@
   font-size: var(--font-size-label);
   line-height: var(--line-height);
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px var(--bk-color);
   text-shadow: 0 0 5px var(--bk-color);
 }
 
@@ -164,7 +164,7 @@
   position: relative;
 }
 
-.floppy2 {
+.floppyIcon {
   width: clamp(21px, 1.904rem + -0.6573vw, 28px);
   height: clamp(21px, 1.904rem + -0.6573vw, 28px);
   fill: transparent;
@@ -184,14 +184,14 @@
   padding-block: 30px;
   padding-inline: clamp(30px, 2.8891rem + -1.1268vw, 42px);
   max-inline-size: clamp(341px, 21.0484rem + 1.1268vw, 353px);
-  max-block-size: 191px;
-  overflow: hidden;
+  border: 2px solid var(--border-color);
+  box-sizing: content-box;
 }
 
 .open_dialog[open] .button-save {
   margin-inline: 0;
   margin-block: 0;
-  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
+  inline-size: clamp(257px, 15.2702rem + 3.3803vw, 293px);
   block-size: 38px;
 }
 
@@ -199,13 +199,14 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
+  inline-size: clamp(257px, 15.2702rem + 3.3803vw, 293px);
 }
 
 .open_dialog-text {
   font-weight: var(--font-weight-text);
   font-family: var(--font-family-accent);
   font-size: var(--font-size-label);
+  text-transform: uppercase;
 }
 
 dialog::backdrop {
@@ -266,6 +267,7 @@ dialog::backdrop {
   background-color: var(--bk-color);
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.3s;
 }
 
 .button:focus {
@@ -274,7 +276,6 @@ dialog::backdrop {
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color);
-  transition: box-shadow 0.3s;
 }
 
 .button::before {
@@ -309,6 +310,7 @@ dialog::backdrop {
   border: 2px solid transparent;
   inline-size: 41px;
   block-size: 38px;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -317,10 +319,15 @@ dialog::backdrop {
 
 .card__icon-button:focus-visible {
   border-color: var(--border-color);
-  transition: 0.3s ease;
 }
 
 .like-icon {
   inline-size: 38px;
   block-size: 32px;
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+      font-family: 'Inter-Variable', sans-serif;
+  }
 }

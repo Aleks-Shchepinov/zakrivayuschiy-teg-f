@@ -46,7 +46,7 @@
     fill: var(--heart-color);
     transition-delay: 0.05s;
   }
-/*dfgdf*/
+
   .like-icon.is-liked .core {
     fill: var(--heart-color);
     transition-delay: 0s;

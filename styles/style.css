@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family-inter), sans-serif;
-  font-variation-settings: var(--font-weight-text);
+  font-variation-settings: 'wght' var(--font-weight-text);
   text-align: var(--text-align);
   font-size: var(--font-size-h);
   line-height: var(--line-height);
@@ -40,7 +40,6 @@
   margin-inline: auto;
   text-align: center;
   font-family: var(--font-family-accent);
-  font-weight: var(--font-weight-text);
 }
 
 .logo {
@@ -74,7 +73,7 @@
 .card-list_item_title {
   --line-height-h: 31px;
 
-  font-weight: var(--font-weight-h);
+  font-variation-settings: 'wght' var(--font-weight-h);
   line-height: var(--line-height-h);
   font-size: var(--font-size-h);
   padding-inline: 10px;

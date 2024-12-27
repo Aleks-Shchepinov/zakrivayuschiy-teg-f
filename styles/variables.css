@@ -8,5 +8,13 @@
     --bk-color: #fff;
     --border-color: #000;
     --font-size-h: 18px;
+    --font-size-label: 14px;
     --text-align: left;
+    --line-height-h: 21.78px;
+    --line-height: 21px;
+    --bg-image:
+    repeating-linear-gradient(to left, #d3d3d3 2px, #d3d3d3 4px, transparent 4px, transparent 6px),
+    repeating-linear-gradient(to bottom, #d3d3d3 2px, #d3d3d3 4px, transparent 4px, transparent 6px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --heart-color: #FF0000;
 }
